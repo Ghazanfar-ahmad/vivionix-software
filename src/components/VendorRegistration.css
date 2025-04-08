@@ -1,0 +1,191 @@
+/* Vendor Form Container */
+.vendor-form-container {
+  display: flex;
+    flex-direction: column;
+    max-width: 97%;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    margin-top: 20px;
+}
+
+/* Heading */
+.vendor-heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+
+}
+
+/* Table Styling */
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.vendor-table, .contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-table th, .contact-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: left;
+}
+
+.vendor-table td, .contact-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.vendor-table tr:nth-child(even), .contact-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Input Fields */
+.vendor-input, .vendor-select, .vendor-file-upload {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.vendor-input:focus, .vendor-select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.vendor-cehckbox{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+.Is-vendor{
+  margin-bottom: 20px;
+  
+}
+
+
+.phone-input {
+  width: 100% !important;
+}
+
+.phone-input > .react-tel-input {
+  width: 100% !important;
+}
+
+.react-tel-input .form-control {
+  width: 100% !important;
+  height: 40px;
+}
+
+/* Buttons */
+.vendor-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.vendor-table td input,
+.vendor-table td select {
+  width: 90%;
+  text-align: center;
+}
+
+.contact-table td input,
+.contact-table td select {
+  width: 90%;
+  text-align: center;
+}
+
+
+.vendor-btn.save {
+  background-color: #ffc107;
+  color: #333;
+  border-radius: 50px;
+}
+.vendor-btn.save:hover {
+  background-color: #e0a800;
+}
+
+.vendor-btn.submit {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50px;
+}
+.vendor-btn.submit:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .vendor-form-container {
+    padding: 20px;
+  }
+
+  .vendor-section input,
+  .vendor-section select {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vendor-form-container {
+    padding: 15px;
+  }
+
+  .product-table th,
+  .product-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .vendor-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .product-table th,
+  .product-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .vendor-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}

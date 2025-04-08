@@ -1,0 +1,227 @@
+/* Container Styling */
+.product-form-container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.vendor-search{
+  
+  height :30px;
+}
+
+/* Heading */
+.product-heading {
+
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product-table-container{
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+/* Increase dropdown width */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+  height: 50px;
+}
+
+/* Specifically for the vendor dropdown */
+.vendor-dropdown {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Input & Select Fields */
+select,
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+/* Table Wrapper for Scroll */
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Table Styling */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+  min-width: 150px;
+}
+
+.product-table td input,
+.product-table td select {
+  width: 90%;
+  text-align: center;
+}
+
+.product-table th {
+  background: #007bff;
+  color: white;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+/* Align Buttons to the Left */
+.product-button-container {
+  display: flex;
+  gap: 40px;
+
+
+}
+
+.add-more-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+
+
+/* Small Plus and Minus Buttons */
+.add-btn {
+  font-size: 14px;
+  margin: 0 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50px;
+}
+
+.remove-btn {
+  font-size: 14px;
+  margin: 0 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50px;
+}
+
+.icon-btn:hover {
+  background: #c82333;
+}
+
+.product-btn.save {
+  background-color: #ffc107;
+  color: #333;
+  border-radius: 50px;
+}
+.product-btn.save:hover {
+  background-color: #e0a800;
+}
+
+.product-btn.submit {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50px;
+}
+.product-btn.submit:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .product-form-container {
+    padding: 20px;
+  }
+
+  .product-section input,
+  .product-section select {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-form-container {
+    padding: 15px;
+  }
+
+  .product-table th,
+  .product-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .product-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .product-table th,
+  .product-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .product-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}

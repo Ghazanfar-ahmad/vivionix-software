@@ -1,0 +1,312 @@
+
+.product-container{
+  width: 97%;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.product-heading{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.product-table {
+  max-width: 100%;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #ffffff;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 14px;
+}
+
+table th input{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+table th input:focus{
+  border-color: #007BFF;
+  background-color: #f0f9ff;
+  outline: none;
+}
+
+
+
+
+/* Update Icon */
+.update-icon {
+  color: black;
+  width: 20px;
+  height: 20px;
+  margin-left: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.update-icon:hover {
+  color: #0056b3; /* Darker blue */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Delete Icon */
+.delete-icon {
+  color: red;
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+
+.product-btn-row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Modal Background */
+.product-List-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);  /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is above other content */
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Modal Content */
+.product-List-modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  height: 700px;  /* Adjust height if necessary */
+  display: block;
+  overflow-y: auto;
+}
+
+/* Modal Title */
+.product-modal-content h3 {
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+/* Form Styles */
+.form-group {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  margin-bottom: 15px;
+
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-align: left; /* Align label to the left */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  height: 80px;
+}
+
+/* Buttons */
+.modal-button,
+.modal-close-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-right: 30px; /* Add space between buttons */
+}
+
+.modal-button:hover,
+.modal-close-button:hover {
+  background-color: #0056b3;
+}
+
+.modal-close-button {
+  background-color: #dc3545;
+}
+
+.modal-close-button:hover {
+  background-color: #c82333;
+}
+
+/* To ensure the buttons are aligned side by side with a gap */
+.modal-button-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 500px;
+}
+
+
+
+
+
+
+
+/* Responsive Table - Scroll on small screens */
+@media screen and (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .product-table th,
+  .product-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .product-table input[type="text"] {
+    font-size: 10px;
+  }
+
+  .update-btn,
+  .view-btn,
+  .print-btn {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
+/* Modal */
+.product-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-modal-content {
+  background: white;
+  padding: 20px;
+  width: 500px;
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+/* Form Fields */
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Modal Buttons */
+.modal-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+gap: 100px;
+}
+
+.modal-button,
+.modal-close-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-button {
+  background: #28a745;
+  color: white;
+}
+
+.modal-close-button {
+  background: #dc3545;
+  color: white;
+}
+
+.modal-button:hover,
+.modal-close-button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Modal */
+@media screen and (max-width: 768px) {
+  .product-modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .modal-button,
+  .modal-close-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .modal-button-container{
+    gap: 10px;
+  }
+}

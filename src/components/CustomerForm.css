@@ -1,0 +1,183 @@
+/* Main Container */
+.customer-form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 97%;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f9f9f9;
+  margin-top: 20px;
+}
+
+/* Form Title */
+.customer-form-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Sections */
+.customer-form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Groups */
+.customer-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.customer-form-group input, 
+.customer-form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Representative Section */
+.representative-title {
+  margin-top: 40px;
+  text-align: left;
+}
+
+/* Responsive Table Wrapper */
+.representative-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Ensure Table Remains a Table */
+.representative-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Ensures it does not shrink too much */
+}
+
+.representative-table th{
+  background-color: #007bff;
+}
+
+.representative-table tr{
+    background-color: #f9f9f9;
+}
+
+.representative-table th, 
+.representative-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center; /* Ensures headers are centered */
+  vertical-align: middle; /* Aligns content vertically */
+}
+
+/* Centering Inputs Properly */
+.representative-table td {
+ 
+  justify-content: center;  /* Horizontally center input fields */
+  align-items: center;      /* Vertically center input fields */
+  height: 50px;             /* Adjust height as needed */
+}
+
+/* Table Input Fields */
+.representative-table td input, 
+.representative-table td select {
+  width: 90%;              /* Ensures input takes most of the column width */
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #fff;
+  transition: 0.3s;
+  text-align: center; /* Centers text inside input fields */
+}
+
+/* Fix for File Input */
+.representative-table td input[type="file"] {
+  width: 95%;
+  text-align: center;
+}
+
+/* Action Buttons */
+.row-icon{
+  display: flex;
+  justify-content: center; /* Centers buttons */
+  gap: 10px;
+}
+
+
+/* Small Plus and Minus Buttons */
+.row-icon .add-btn {
+  font-size: 14px;
+  margin: 0 2px;
+  border: none !important;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50px;
+}
+
+.row-icon .remove-btn {
+  font-size: 14px;
+  margin: 0 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .customer-form-container {
+    padding: 30px;
+  }
+  .representative-table td input, .representative-table td select {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .customer-form-container {
+    padding: 20px;
+  }
+  .representative-table th, .representative-table td {
+    padding: 8px;
+  }
+  .representative-table td input, .representative-table td select {
+    width: 80%;
+  }
+  .row-icon {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-form-container {
+    padding: 10px;
+  }
+  .customer-form-title {
+    font-size: 18px;
+  }
+  .representative-table th, .representative-table td {
+    padding: 5px;
+    font-size: 12px;
+  }
+  .representative-table td input, .representative-table td select {
+    width: 75%;
+    font-size: 12px;
+  }
+  .row-icon {
+    flex-direction: column;
+  }
+}
