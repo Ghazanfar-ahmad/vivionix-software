@@ -7,7 +7,6 @@ import {
   FaUserCircle,
   FaSignOutAlt,
   FaBuilding,
-  FaThLarge,
   FaChevronDown,
   FaChevronRight,
   FaUser,
@@ -280,43 +279,7 @@ const HomePage = () => {
             </div>
           )}
 
-          {/* Category Dropdown */}
-          <div
-            className="sidebar-item"
-            onClick={() => toggleDropdown("category")}
-          >
-            <FaThLarge className="icon" />{" "}
-            {!isSidebarCollapsed && (
-              <>
-                <span className="items">Category</span>
-                <span style={{ marginLeft: "55px" }}>
-                  {activeDropdown === "category" ? (
-                    <FaChevronDown className="dropdown-icon" />
-                  ) : (
-                    <FaChevronRight className="dropdown-icon" />
-                  )}
-                </span>
-              </>
-            )}
-          </div>
-
-          {activeDropdown === "category" && (
-            <div className="sidebar-submenu">
-              <div
-                className="sidebar-subitem"
-                onClick={() => handleMenuItemClick("CustomerCategory Form")}
-              >
-                Category Registration
-              </div>
-              <div
-                className="sidebar-subitem"
-                onClick={() => handleMenuItemClick("Customer Category Table")}
-              >
-                Category List
-              </div>
-            </div>
-          )}
-
+         
           {/* Department Dropdown */}
           <div
             className="sidebar-item"
@@ -416,48 +379,7 @@ const HomePage = () => {
             </div>
           )}
 
-          {/* Representative Dropdown */}
-          <div
-            className="sidebar-item"
-            onClick={() => toggleDropdown("Representative")}
-          >
-            <FaStore size={14} />
-            {!isSidebarCollapsed && (
-              <span className="items">Representative</span>
-            )}
-            {!isSidebarCollapsed && (
-              <span style={{ marginLeft: "20px" }}>
-                {activeDropdown === "Representative" ? (
-                  <FaChevronDown className="dropdown-icon" />
-                ) : (
-                  <FaChevronRight className="dropdown-icon" />
-                )}
-              </span>
-            )}
-          </div>
-          {!isSidebarCollapsed && activeDropdown === "Representative" && (
-            <div className="sidebar-submenu">
-              <div
-                className="sidebar-subitem"
-                onClick={() => handleMenuItemClick("Vendor Representative Form")}
-              >
-                Vendor Representative Registration
-              </div>
-              <div
-                className="sidebar-subitem"
-                onClick={() => handleMenuItemClick("Vendor Representative List")}
-              >
-                Vendor Representative List
-              </div>
-              <div
-                className="sidebar-subitem"
-                onClick={() => handleMenuItemClick("Customer Representative Form")}
-              >
-                Customer Representative Registration
-              </div>
-            </div>
-          )}
-
+          
           {/* Customer Dropdown */}
           <div
             className="sidebar-item"
