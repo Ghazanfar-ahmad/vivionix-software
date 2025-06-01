@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Table, Button, Modal, Form, Alert, Badge, InputGroup, Row, Col } from 'react-bootstrap';
-import { FaHistory, FaExclamationTriangle } from 'react-icons/fa';
+import { Table, Button, Modal, Form,  Badge,  Row, Col } from 'react-bootstrap';
+import { FaHistory } from 'react-icons/fa';
+import './EmployeeTable.css'; // Import the CSS for styling
 
 const StockList = () => {
   // Mock data for demonstration

@@ -17,6 +17,8 @@ import LoginPage from './LoginPage';
 import SignUpPage from './SignUp';
 import ForgetPassword from './Forgetpassword';
 
+
+
 // Store Module Components
 import StockList from './components/Table/StockList';
 import StockLedger from './components/Table/StockLedger';
@@ -48,6 +50,10 @@ function App() {
           <Route path="product-table" element={<ProductTable />} />
           <Route path="vendor-registration" element={<VendorRegistration />} />
           <Route path="vendor-table" element={<VendorTable />} />
+         
+
+
+
           
           {/* Store Module Routes */}
           <Route path="stock-list" element={<StockList />} />

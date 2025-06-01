@@ -14,8 +14,9 @@ import {
   FaExpand,
   FaEdit,
   FaCogs,
-  FaWarehouse
+  FaWarehouse,FaBuilding 
 } from "react-icons/fa";
+
 
 import { AlignLeft, Search } from "lucide-react";
 import logo from './logo.png';
@@ -173,6 +174,7 @@ const HomePage = () => {
         return <ListOfDC />;
       case "Pending Approvals":
         return <PendingApprovals />;
+     
       default:
         return <Dashboard />;
     }
@@ -319,6 +321,8 @@ const HomePage = () => {
             </div>
           )}
 
+         
+
           {/* Store Section */}
           <div className="sidebar-item" onClick={() => toggleDropdown("Store")}>
             <FaWarehouse size={14} />
@@ -354,6 +358,8 @@ const HomePage = () => {
           )}
         </div>
       </div>
+
+      
 
       <div className={`main-content ${isSidebarCollapsed ? "collapsed" : ""} ${isSidebarVisible ? "overlay" : ""}`}>
         <nav className={`navbar ${isSidebarCollapsed ? "collapsed" : ""}`}>
